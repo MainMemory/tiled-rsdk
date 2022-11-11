@@ -1,0 +1,138 @@
+{
+    "automappingRulesFile": "",
+    "commands": [
+    ],
+    "extensionsPath": "extensions",
+    "folders": [
+        "Stages",
+        "Chunks"
+    ],
+    "propertyTypes": [
+        {
+            "id": 4,
+            "name": "ActiveLayers",
+            "storageType": "string",
+            "type": "enum",
+            "values": [
+                "Foreground",
+                "Background 1",
+                "Background 2",
+                "Background 3",
+                "Background 4",
+                "Background 5",
+                "Background 6",
+                "Background 7",
+                "Background 8",
+                "None"
+            ],
+            "valuesAsFlags": false
+        },
+        {
+            "color": "#ffa0a0a4",
+            "id": 3,
+            "members": [
+                {
+                    "name": "Index",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "Parallax Factor",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "Scroll Speed",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "Type",
+                    "propertyType": "LayerTypes",
+                    "type": "string",
+                    "value": "Horizontal Scrolling"
+                }
+            ],
+            "name": "BackgroundLayer",
+            "type": "class",
+            "useAs": [
+                "layer"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "id": 6,
+            "members": [
+                {
+                    "name": "PropertyValue",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "Type",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "Entity",
+            "type": "class",
+            "useAs": [
+                "object"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "LayerMidpoints",
+            "storageType": "string",
+            "type": "enum",
+            "values": [
+                "Before Layer 0",
+                "After Layer 0",
+                "After Layer 1",
+                "After Layer 2",
+                "After Layer 3"
+            ],
+            "valuesAsFlags": false
+        },
+        {
+            "id": 1,
+            "name": "LayerTypes",
+            "storageType": "string",
+            "type": "enum",
+            "values": [
+                "None",
+                "Horizontal Scrolling",
+                "Vertical Scrolling",
+                "3D Floor",
+                "3D Sky"
+            ],
+            "valuesAsFlags": false
+        },
+        {
+            "color": "#ffa0a0a4",
+            "id": 2,
+            "members": [
+                {
+                    "name": "Deform",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "Parallax Factor",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "Scroll Speed",
+                    "type": "float",
+                    "value": 0
+                }
+            ],
+            "name": "ScrollInfo",
+            "type": "class",
+            "useAs": [
+                "object"
+            ]
+        }
+    ]
+}
