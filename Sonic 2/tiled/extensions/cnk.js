@@ -66,15 +66,23 @@ var cnkMapFormat = {
 					var col = 0;
 					if (c1layer != null) {
 						var tile = c1layer.tileAt(rx, ry);
-						if (tile != null)
-							col = (tile.id & 3) << 4;
+						if (tile != null) {
+							if (tile.id == 3)
+								col = 0x40;
+							else
+								col = (tile.id & 3) << 4;
+						}
 						else
 							col = 0x30;
 					}
 					if (c2layer != null) {
 						var tile = c2layer.tileAt(rx, ry);
-						if (tile != null)
-							col |= tile.id & 3;
+						if (tile != null) {
+							if (tile.id == 3)
+								col |= 4;
+							else
+								col |= tile.id & 3;
+						}
 						else
 							col |= 3;
 					}

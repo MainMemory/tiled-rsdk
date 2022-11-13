@@ -61,9 +61,13 @@ var getChunks = function(folder)
 				var col1 = (col >> 4) & 0xF;
 				if (col1 < 3)
 					col1edit.setTile(rx, ry, colts.tile(col1));
+				else if (col1 == 4)
+					col1edit.setTile(rx, ry, colts.tile(3));
 				var col2 = col & 0xF;
 				if (col2 < 3)
 					col2edit.setTile(rx, ry, colts.tile(col2));
+				else if (col2 == 4)
+					col2edit.setTile(rx, ry, colts.tile(3));
 				addr += 3;
 			}
 		}
